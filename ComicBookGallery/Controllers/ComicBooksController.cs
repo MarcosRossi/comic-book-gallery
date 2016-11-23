@@ -10,7 +10,7 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Details()
         {
-            ViewBag.Title = "Spiderman registred";
+            ViewBag.Title = "Amazing Spiderman xD";
             ViewBag.Description = "Zarpado libro papa";
             ViewBag.Artists = new string[] { "Parker", "Jane", "Peter", "Mary" };
             return View();
