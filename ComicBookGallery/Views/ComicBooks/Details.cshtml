@@ -1,6 +1,7 @@
 ﻿@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
     Layout = null;
-    var title = "hola";
+    ViewBag.Title = "Comic Book Details";
 }
 
 <!DOCTYPE html>
@@ -11,8 +12,18 @@
     <title>Details</title>
 </head>
 <body>
-    <div> 
-        <p>@title</p>
+    <div>
+        <h1>@ViewBag.Title</h1>
+
+        <h2>@ViewBag.Description</h2>
+        <ul>
+
+            @foreach (var artist in @ViewBag.Artists)
+            {
+                <li>@artist</li>
+            }
+
+        </ul>
     </div>
 </body>
 </html>
